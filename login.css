@@ -1,0 +1,41 @@
+body{
+  background: url('images/img1.jpg');
+color: #fff;
+}
+.login_form{
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  background: rgba(18, 28, 34, 0.7);
+  box-sizing: border-box;
+}
+input{
+  border: none;
+  border-bottom: #fff 1px solid;
+  font-size: 20px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  background: transparent;
+  margin-bottom: 30px;
+
+}
+:focus{
+
+}
+label{
+  top:0;
+  font-size: 20px;
+  left:0;
+  position: absolute;
+  pointer-events: none;
+}
+h2{
+  text-align: center;
+  line-height: normal;
+  text-transform: capitalize;
+}
