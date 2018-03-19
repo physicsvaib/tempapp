@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .contain {
+      width: 60%;
+      height: 80%;
+      margin: 20vh auto;
+      text-align: center;
+      padding: 20px;
+      text-transform: capitalize;
+      background: rgb(238, 29, 255);
+      border: #fff dashed 2px;
+    }
+
+    input {
+      background: rgb(27, 247, 239);
+      color: #fff;
+      text-align: center;
+      border: none;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contain">
+    <label for="val1">enter value first</label><br>
+    <input type="text" id="val1"><br><br>
+    <label for="val2">enter value second</label><br>
+    <input type="text" id="val2"><br>
+    <button type="button" name="button" onclick="add()">add</button><br>
+    <button type="button" name="button" onclick="mul()">multiply</button><br>
+    <button type="button" name="button" onclick="sub()">subtract</button><br>
+    <button type="button" name="button" onclick="div()">divide</button><br>
+    <p id="ans"></p>
+  </div>
+  <script>
+    function add() {
+      var x1 = document.querySelector("#val1").value;
+      var x2 = document.querySelector("#val2").value;
+      x2 = Number(x2);
+      x1 = Number(x1);
+      document.querySelector("body").style.background = "red";
+      document.querySelector("body").style.color = "#fff";
+
+      var c = x1 + x2;
+      document.querySelector("p").innerHTML = c;
+    }
+
+    function mul() {
+      var x1 = document.querySelector("#val1").value;
+      var x2 = document.querySelector("#val2").value;
+      x2 = Number(x2);
+      x1 = Number(x1);
+      document.querySelector("body").style.background = "#333";
+      document.querySelector("body").style.color = "#fff";
+
+      var c = x1 * x2;
+      document.querySelector("p").innerHTML = c;
+    }
+
+    function sub() {
+      var x1 = document.querySelector("#val1").value;
+      var x2 = document.querySelector("#val2").value;
+      document.querySelector("body").style.background = "rgb(88, 244, 124)";
+      document.querySelector("body").style.color = "#fff";
+      x2 = Number(x2);
+      x1 = Number(x1);
+      var c = x1 - x2;
+      document.querySelector("p").innerHTML = c;
+    }
+
+    function div() {
+      var x1 = document.querySelector("#val1").value;
+      var x2 = document.querySelector("#val2").value;
+      x2 = Number(x2);
+      x1 = Number(x1);
+      document.querySelector("body").style.background = "#03ffdf";
+      document.querySelector("body").style.color = "#fff";
+
+
+      var c = x1 / x2;
+      document.querySelector("p").innerHTML = c;
+    }
+  </script>
+</body>
+
+</html>
