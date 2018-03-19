@@ -13,24 +13,25 @@ ul {
 }
 
 li {
-    
     float: left;
 }
 
 li:nth-child(4) {
     float: right;
 }
-select{
+
+select {
     margin: 14px 16px;
- }
+}
+
 a {
     text-decoration: none;
     display: block;
     padding: 10px 15px;
-    
     color: #ffffff;
     text-align: center
 }
-ol li{
+
+ol li {
     display: block;
 }
